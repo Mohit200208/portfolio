@@ -3,68 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body style="background-color:rgba(200, 184, 198, 0.88);">
+<body>
+    
     <header class="header">
+        <div class="logo-container">
+            <img src="profile.jpg" class="image">
+
+        <a href="#" class="logo">Mohit</a>
+        </div>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact me</a>
+            <a href="#" class="active">Home</a>
+            <a href="link2">My Skills</a>
+            <a href="link3">Portfolio</a>
+            <a href="link4">About</a>
         </nav>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <header>
-        <h1 style="color:white;">Hi, I'm MOHIT YADAV</h1>
-        <h2 style="color:rgb(171, 40, 145);">Designer</h2>
-        <p style="color:white;">"Welcome to my portfolio! I’m Mohit Yadav, a passionate designer specializing in graphic design, UI/UX. 
-            With a keen eye for detail and a love for creative problem-solving, I strive to create visually compelling and user-centric designs that resonate with audiences.
-             Each project is an opportunity to blend aesthetics with functionality, ensuring impactful and memorable experiences. Explore my work to see how I bring ideas to life!"</p>
+    
+    <section class="home">
         
-    </header>
-<header style="text-align:center;">
-    <section id="about" style="padding: 20px;">
-        <h3><u>About Me</u></h3>
-        <p>"I am Mohit Yadav, and I am pursuing B.tech in CSE at AKGEC, Ghaziabad. 
-            I am a designer skilled in Figma designing user-friendly websites that enhance the user experience also have a bit knowledge in HTML and CSS.
-            I believe good design is all about simplicity and functionality, making it easy for users to navigate and engage with the content. 
-            In my free time, I enjoy reading books, which inspires my creativity and broadens my perspective. I am passionate about combining technology and design, 
-            and I look forward to exploring exciting opportunities in the engineering field.</p>
+        <div class="home-content">
+            
+            <h1>Hi,I'm Mohit Yadav</h1>
+            <h3> Designer</h3>
+            <p>"Welcome to my portfolio! I'm Mohit Yadav, a passionate designer specializing in graphic design, UI/UX. With a keen eye for detail and a love for creative problem-solving, I strive to create visually compelling and user-centric designs that resonate with audiences. Each project is an opportunity to blend aesthetics with functionality, ensuring impactful and memorable experiences. Explore my work to see how I bring ideas to life!"</p>
+       <div class="s">
+        <button><span>My Projects</span></button>
+       </div> 
+       
     </section>
-</header>
-    <section id="projects" style="padding: 20px;">
-        <h2>My Projects</h2>
-        <ul>
-            <li><b><a href="https://www.figma.com/design/sZMqxu5Vj6Q2OZN1t7Ey7g/Mohit-23153025-Task-1?node-id=3-2&t=pNBjhLReKUdp9uJx-1">Project 1 : </a></b> A cartoon face created in Figma</li>
-            <li><b><a href="https://www.figma.com/design/gFkm9NsDHeXQdI4n6QwFxV/1-page?node-id=0-1&t=A9TdGwqGenv6biXD-1">Project 2 : </a></b> A UI for ios application</li>
-            <li><b><a href="https://www.figma.com/design/d9MdaM4B3M05vRm7yYCoRz/Untitled?node-id=0-1&t=BM8XRHkHYQnLsy19-1">Project 3 : </a></b> A Design for GDG student club</li>
-        </ul>
-    </section>
+    
+    <div class="about" id="ok2">
+        <h1>ABOUT ME</h1>
+    <p>I am Mohit Yadav, and I am pursuing B.tech in CSE(AIML) at AKGEC, Ghaziabad. I am a designer skilled in Figma designing user-friendly websites that enhance the user experience also have a bit knowledge in HTML and CSS.I believe good design is all about simplicity and functionality, making it easy for users to navigate and engage with the content. In my free time, I enjoy reading books, which inspires my creativity and broadens my perspective. I am passionate about combining technology and design, and I look forward to exploring exciting opportunities in the engineering field.</p>
+        </div>
+       <br><br>
+        <h3 class="h3">Projects</h3>
+        <div class="proj">
+       <div class="it1">
+        <b><a href="https://www.figma.com/design/sZMqxu5Vj6Q2OZN1t7Ey7g/Mohit-23153025-Task-1?node-id=3-2&t=pNBjhLReKUdp9uJx-1">Project 1 : </a></b>
+         <img src="proj1.jpg" alt="proj1">
+         <div class="into">
+           <h1>Project 1</h1>
+           <p>GDG Student Club </p>
+         </div></div>
+         <div class="it2">
+            <b><a href="https://www.figma.com/design/gFkm9NsDHeXQdI4n6QwFxV/1-page?node-id=0-1&t=A9TdGwqGenv6biXD-1">Project 2 : </a></b>
+            <img src="proj2.jpg" alt="proj2">
+            <div class="into">
+                <h1>Project 2</h1>
+                <p>Character using Figma</p>
+         </div>
+        </div>
+        </div>
+        <div id="contact">
+            <h1 class="h">Connect with Me</h1>
+            <h2>Feel free to reach out for project inquiries, collaborations, or just to connect</h2>
+            <form>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Your name"><br><br>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="Your Email"><br><br>
+            <label for="msg">Message: </label>
+            <textarea name="msg" id="Message" placeholder="Your Message"></textarea><br><br>
+            <button type="submit" id="submt">Send Message</button>
+            </form>
 
-    <section id="contact" style="padding: 20px;">
-        <h3>Contact Me</h3>
-        <p>Feel free to reach out for project inquiries, collaborations, or just to connect</p>
-        <p>Email: mohit23153025@akgec.ac.in</p>
-        <p>Phone: 9488888850</p>
-    </section>
+</div>
+    
+       <section>
+       <div class="btm">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-instagram' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+   </section>
+   <footer style="text-align: center; padding: 10px; background-color: #4f4d4d; color: white;">
+    <p>© 2024 Mohit Yadav. All rights reserved.</p>
+</footer>
 
-    <footer style="text-align: center; padding: 10px; background-color: #9e6464; color: white;">
-        <p>© 2024 Mohit Yadav. All rights reserved.</p>
-    </footer>
+    
 </body>
 </html>
